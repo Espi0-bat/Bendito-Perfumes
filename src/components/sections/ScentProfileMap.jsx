@@ -9,7 +9,7 @@ export const ScentProfileMap = () => {
       <div className="rule" />
       <div className="col2 gap-responsive" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", paddingTop: 72 }}>
         <div ref={hRef}>
-          <div className={`rv slabel ${hInView ? "on" : ""}`} style={{ marginBottom: 18 }}>II. Scent Profile Map</div>
+          <div className={`rv slabel ${hInView ? "on" : ""}`} style={{ marginBottom: 18 }}>II. Mapa de Perfis Olfativos</div>
           <h2 className={`rv d1 serif ${hInView ? "on" : ""}`} style={{
             fontSize: "clamp(2.2rem,3.8vw,3.6rem)", fontWeight: 700, lineHeight: 1.12,
             color: "var(--w)", marginBottom: 26,
@@ -37,7 +37,7 @@ export const ScentProfileMap = () => {
               color: "var(--wm)", fontSize: ".66rem", lineHeight: 1.85,
               fontStyle: "italic", fontWeight: 300,
             }}>
-              "A frequência vibratória de uma fragrância amadeirada ativa centros cerebrais de confiança e credibilidade no interlocutor — um dado ignorado pela maioria dos executivos."
+              "A assinatura química de uma fragrância amadeirada ativa centros cerebrais de confiança e credibilidade no interlocutor — um dado ignorado pela maioria dos executivos."
             </p>
             <div className="corm" style={{ color: "var(--g)", fontSize: ".82rem", marginTop: 10 }}>
               — Perfumaria de Poder, Coleção Bendito

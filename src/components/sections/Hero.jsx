@@ -23,16 +23,25 @@ export const Hero = () => {
   return (
     <section className="hero-grid grain" style={{
       minHeight: "100vh",
-      display: "grid",
-      gridTemplateColumns: "1fr 1fr",
+      display: "flex",
       position: "relative",
       overflow: "hidden",
+      backgroundImage: "url('/bendito-perfuu.png')",
+      backgroundSize: "cover",
+      backgroundPosition: "center",
     }}>
+      {/* Overlay escuro em gradiente para proteger a legibilidade do texto no celular/desktop */}
+      <div className="hero-overlay" style={{
+        position: "absolute", inset: 0,
+        background: "linear-gradient(to right, rgba(17,17,17,0.95) 0%, rgba(17,17,17,0.5) 50%, transparent 100%)",
+        zIndex: 1, pointerEvents: "none"
+      }} />
+
       <div className="hero-pad" style={{
         display: "flex", flexDirection: "column", justifyContent: "center",
         padding: "140px 80px 100px",
-        borderRight: "1px solid var(--gb)",
         position: "relative", zIndex: 2,
+        flex: 1, maxWidth: 680,
       }}>
         {/* Glow Orb */}
         <div className="gold-glow-orb" style={{ width: "180vw", height: "180vw", top: "-50vw", left: "-50vw" }} />
@@ -52,7 +61,7 @@ export const Hero = () => {
           position: "relative", zIndex: 2,
           fontSize: "clamp(2.6rem,5.5vw,6rem)",
           fontWeight: 700, lineHeight: 1.04,
-          color: "var(--w)",
+          color: "#FFFFFF",
           ...tr(.45),
         }}>
           Bendito Perfume:<br />
@@ -64,7 +73,7 @@ export const Hero = () => {
         <div className="rule" style={{ maxWidth: 180, margin: "32px 0", ...tr(.6) }} />
 
         <p className="sans" style={{
-          color: "var(--wm)", fontSize: ".8rem", lineHeight: 1.95,
+          color: "rgba(255,255,255,0.85)", fontSize: ".8rem", lineHeight: 1.95,
           fontWeight: 300, maxWidth: 380, letterSpacing: ".04em",
           ...tr(.72),
         }}>
@@ -78,61 +87,21 @@ export const Hero = () => {
 
         <div className="stats-wrap-mobile" style={{
           display: "flex", gap: 48, marginTop: 60,
-          borderTop: "1px solid var(--gb)", paddingTop: 28,
+          borderTop: "1px solid rgba(212,175,55,.25)", paddingTop: 28,
           ...tr(1),
         }}>
-          {[["500+", "Clientes Premium"], ["20+", "Maisons Curadas"], ["100%", "Originais"]].map(([n, l]) => (
+          {[["500+", "Clientes Premium"], ["20+", "Maisons Selecionadas"], ["100%", "Originais"]].map(([n, l]) => (
             <div key={l}>
               <div className="corm" style={{ color: "var(--g)", fontSize: "1.75rem", fontWeight: 600 }}>{n}</div>
-              <div className="sans" style={{ color: "var(--wm)", fontSize: ".55rem", letterSpacing: ".18em", textTransform: "uppercase", marginTop: 4 }}>{l}</div>
+              <div className="sans" style={{ color: "rgba(255,255,255,0.65)", fontSize: ".55rem", letterSpacing: ".18em", textTransform: "uppercase", marginTop: 4 }}>{l}</div>
             </div>
           ))}
         </div>
       </div>
 
-      <div className="hero-right" style={{
-        position: "relative", overflow: "hidden",
-        background: "linear-gradient(140deg,#F5EFE6 0%,#FDFBF7 55%,#EFE5D5 100%)",
-        display: "flex", alignItems: "center", justifyContent: "center",
-      }}>
-        <div style={{
-          position: "absolute", inset: 0,
-          background: "radial-gradient(ellipse 75% 55% at 50% 38%,rgba(212,175,55,.07) 0%,transparent 70%)",
-        }} />
-        <div style={{
-          position: "absolute", bottom: "-25%", right: "-25%",
-          width: 700, height: 700, borderRadius: "50%",
-          background: "radial-gradient(circle,rgba(212,175,55,.04) 0%,transparent 70%)",
-        }} />
-        <div style={{ position: "absolute", top: "50%", left: 0, right: 0, height: 1, background: "rgba(212,175,55,.04)" }} />
-        <div style={{ position: "absolute", left: "50%", top: 0, bottom: 0, width: 1, background: "rgba(212,175,55,.04)" }} />
-
-        <div className="float" style={{ position: "relative", zIndex: 2 }}>
-          <Bottle scale={1.35} glow label="SIGNATURE" />
-        </div>
-
-        <div className="corm" style={{
-          position: "absolute", right: 28, top: "50%",
-          transform: "translateY(-50%) rotate(90deg)",
-          color: "var(--g)", fontSize: ".58rem", letterSpacing: ".45em",
-          opacity: .4, whiteSpace: "nowrap",
-        }}>
-          PERFUMES ORIGINAIS · DECANTS EXCLUSIVOS · BRASÍLIA DF
-        </div>
-
-        <div style={{
-          position: "absolute", top: 30, right: 30, width: 40, height: 40,
-          borderTop: "1px solid var(--gb)", borderRight: "1px solid var(--gb)",
-        }} />
-        <div style={{
-          position: "absolute", bottom: 30, left: 30, width: 40, height: 40,
-          borderBottom: "1px solid var(--gb)", borderLeft: "1px solid var(--gb)",
-        }} />
-      </div>
-
       <div className="sans" style={{
-        position: "absolute", bottom: 32, left: 80,
-        color: "var(--wd)", fontSize: ".56rem", letterSpacing: ".25em",
+        position: "absolute", bottom: 32, left: 80, zIndex: 2,
+        color: "rgba(255,255,255,0.4)", fontSize: ".56rem", letterSpacing: ".25em",
         ...tr(1.2),
       }}>
         ↓ SCROLL

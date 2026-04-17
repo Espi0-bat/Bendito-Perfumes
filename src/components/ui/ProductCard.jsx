@@ -18,12 +18,14 @@ export const ProductCard = ({ number, name, family, profile, image, notes, label
       className={`rv ${inView ? "on" : ""}`}
       style={{
         transitionDelay: `${delay}s`,
+        height: "100%",
       }}
     >
       <div 
         className="pcard"
         onMouseEnter={() => setHov(true)}
         onMouseLeave={() => setHov(false)}
+        style={{ height: "100%" }}
       >
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start" }}>
         <span className="corm" style={{ color: "var(--g)", fontSize: ".75rem", letterSpacing: ".2em", opacity: .65 }}>

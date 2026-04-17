@@ -15,7 +15,7 @@ export const TheExperience = () => {
       <div className="rule" />
 
       <div ref={hRef} style={{ paddingTop: 72 }}>
-        <div className={`rv slabel ${hInView ? "on" : ""}`} style={{ marginBottom: 60 }}>III. The Experience</div>
+        <div className={`rv slabel ${hInView ? "on" : ""}`} style={{ marginBottom: 60 }}>III. Manifesto Olfativo</div>
 
         <div style={{ maxWidth: 860, margin: "0 auto", textAlign: "center" }}>
           <div className={`rv d1 corm ${hInView ? "on" : ""}`} style={{ color: "var(--g)", fontSize: ".72rem", letterSpacing: ".32em", marginBottom: 28, opacity: .65 }}>

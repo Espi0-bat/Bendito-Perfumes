@@ -31,7 +31,7 @@ export const PRODUCTS = [
     number: 1, label: "NO. 01",
     name: "Creed Aventus",
     family: "Amadeirado Frutado",
-    profile: "A fragrância do poder executivo. Fumado, audacioso, memorável — para quem lidera reuniões e não apenas as frequenta.",
+    profile: "A fragrância do poder executivo. Toque esfumaçado, audacioso, memorável — para quem lidera reuniões e não apenas as frequenta.",
     notes: ["Cassis", "Bétula Defumada", "Musgo de Carvalho", "Âmbar"],
   },
   {
@@ -44,8 +44,8 @@ export const PRODUCTS = [
   {
     number: 3, label: "NO. 03",
     name: "Parfums de Marly Layton",
-    family: "Floral Aromático",
-    profile: "Elegância francesa em estado puro. Bergamota e notas florais que constroem presença sem esforço aparente.",
+    family: "Fougère Oriental",
+    profile: "Elegância francesa em estado puro. Bergamota e notas especiadas que constroem presença sem esforço aparente.",
     notes: ["Maçã", "Bergamota", "Jasmim", "Baunilha"],
   },
   {

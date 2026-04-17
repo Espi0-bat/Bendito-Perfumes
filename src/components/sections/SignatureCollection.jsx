@@ -16,7 +16,7 @@ export const SignatureCollection = () => {
 
       <div className="rule" />
       <div ref={hRef} style={{ padding: "72px 0 56px", maxWidth: 620, position: "relative", zIndex: 2 }}>
-        <div className={`rv slabel ${hInView ? "on" : ""}`} style={{ marginBottom: 18 }}>I. The Signature Collection</div>
+        <div className={`rv slabel ${hInView ? "on" : ""}`} style={{ marginBottom: 18 }}>I. Coleção Assinatura</div>
         <h2 className={`rv d1 serif ${hInView ? "on" : ""}`} style={{
           fontSize: "clamp(2.4rem,4vw,3.8rem)", fontWeight: 700, lineHeight: 1.1, color: "var(--w)", marginBottom: 22,
         }}>

@@ -146,6 +146,10 @@ body{background:linear-gradient(135deg, #FDFBF7 0%, #F4ECE1 100%);color:var(--w)
   .responsive-logo{font-size:1.15rem!important;letter-spacing:.15em!important}
   .hero-pad{padding:120px 32px 80px!important}
   .gap-responsive{gap:40px!important}
+  
+  /* Ajuste no mobile para mostrar a mão com perfume e escurecer do topo pra base */
+  .hero-grid { background-position: 85% center !important; }
+  .hero-overlay { background: linear-gradient(to bottom, rgba(17,17,17,0.85) 0%, rgba(17,17,17,0.65) 55%, rgba(17,17,17,0.3) 100%) !important; }
 }
 @media(min-width:901px){
   .mobile-only{display:none!important}
