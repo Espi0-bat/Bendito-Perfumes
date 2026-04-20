@@ -140,9 +140,9 @@ body{background:linear-gradient(135deg, #FDFBF7 0%, #F4ECE1 100%);color:var(--w)
   nav{padding:14px 22px!important}
   .hide-mobile{display:none!important}
   .mobile-only{display:block!important}
-  .btn-wrap-mobile{flex-wrap:wrap;justify-content:center!important}
-  .btn-wrap-mobile > button, .btn-wrap-mobile > a{width:100%}
-  .stats-wrap-mobile{justify-content:space-between!important;gap:28px!important}
+  .btn-wrap-mobile{flex-wrap:wrap;justify-content:center!important;gap:16px!important}
+  .btn-wrap-mobile > button, .btn-wrap-mobile > a{width:100%;justify-content:center}
+  .stats-wrap-mobile{flex-wrap:wrap!important;justify-content:space-between!important;gap:24px!important}
   .responsive-logo{font-size:1.15rem!important;letter-spacing:.15em!important}
   .hero-pad{padding:120px 32px 80px!important}
   .gap-responsive{gap:40px!important}

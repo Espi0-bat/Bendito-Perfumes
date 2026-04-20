@@ -45,7 +45,9 @@ export const ProductCard = ({ number, name, family, profile, image, notes, label
         padding: "16px 0", 
         height: 200, 
         alignItems: "center",
-        position: "relative"
+        position: "relative",
+        flexShrink: 0,
+        overflow: "hidden"
       }}>
         {(!image || imgError) ? (
           <Bottle scale={.6} glow={hov} label={label} opacity={hov ? 1 : .7} />
@@ -55,9 +57,10 @@ export const ProductCard = ({ number, name, family, profile, image, notes, label
             alt={name}
             onError={() => setImgError(true)}
             style={{
-              maxHeight: "100%",
-              maxWidth: "100%",
+              height: "100%",
+              width: "100%",
               objectFit: "contain",
+              mixBlendMode: "multiply",
               filter: hov ? "drop-shadow(0 0 20px rgba(212,175,55,0.2)) brightness(1.1)" : "brightness(0.9)",
               transform: hov ? "scale(1.1)" : "scale(1)",
               transition: "transform .6s cubic-bezier(.16,1,.3,1), filter .6s ease",

@@ -59,7 +59,7 @@ export const Hero = () => {
 
         <h1 className="serif" style={{
           position: "relative", zIndex: 2,
-          fontSize: "clamp(2.6rem,5.5vw,6rem)",
+          fontSize: "clamp(2rem,8vw,6rem)",
           fontWeight: 700, lineHeight: 1.04,
           color: "#FFFFFF",
           ...tr(.45),
